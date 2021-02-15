@@ -1,0 +1,77 @@
+.pagination {
+    width: 45%;
+    height: 100%;
+
+    @media screen and (max-width: 600px){
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+     }
+
+    &-intro{
+        height: 50%;
+
+        @media screen and (max-width: 600px){
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+         }
+    }
+    &-detail {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 600px){
+           flex-direction: column;
+           align-items: baseline;
+        }
+
+        &__slide {
+            list-style: none;
+            color: $white;
+            width: 40%;
+             margin: .5rem 2rem .5rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+
+            @media screen and (max-width: 600px){
+                width: 100%;
+                margin-bottom: 1rem;
+             }
+
+            li {
+                height: 20px;
+                width: 29px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px dotted #fff;
+                border-right: none;
+                text-align: center;
+                font-size: 1.2rem;
+                cursor: pointer;  
+              
+                
+                p {
+                    height: 90%;
+                    width: 90%;
+                }
+                p.active {
+                    background-color: $white;
+                }
+            }
+            li:last-child {
+                border-right: 2px dotted #fff;
+            }
+            
+
+        }
+
+        &__text.fadeIn{
+            animation: fadeIn 1.3s ease ;
+        }
+        &__text.fadeOut{
+            animation: fadeOut 1.3s ease ;
+        }
+    }
+}
