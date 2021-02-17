@@ -537,6 +537,7 @@ footer .logo img {
 @media screen and (max-width: 600px) {
   .pagination-detail__slide {
     width: 100%;
+    height: 50%;
     margin-bottom: 1rem;
   }
 }
@@ -561,6 +562,11 @@ footer .logo img {
 }
 .pagination-detail__slide li:last-child {
   border-right: 2px dotted #fff;
+}
+@media screen and (max-width: 600px) {
+  .pagination-detail__text {
+    height: 50%;
+  }
 }
 .pagination-detail__text.fadeIn {
   animation: fadeIn 1.3s ease;
