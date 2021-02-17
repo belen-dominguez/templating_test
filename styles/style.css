@@ -276,7 +276,6 @@ h1 {
 @media screen and (max-width: 600px) {
   .image-container .image-bg__text {
     width: 100vw;
-    min-width: 100vw;
   }
 }
 .image-container .image-bg__text-inner {
@@ -464,7 +463,7 @@ footer .logo img {
   margin: 2rem auto;
 }
 .slideshow-container .slideshow .slide-item:last-child {
-  width: 10vw;
+  width: 100vw;
 }
 .slideshow-container .slideshow .slide-item.fadeIn {
   animation: fadeIn 0.7s ease;
@@ -573,7 +572,7 @@ footer .logo img {
     width: 100%;
     font-size: 13px;
     text-align: center;
-    color: green;
+    color: violet;
   }
 }
 .pagination-detail__text.fadeIn {
