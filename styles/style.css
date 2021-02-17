@@ -569,6 +569,10 @@ footer .logo img {
 @media screen and (max-width: 600px) {
   .pagination-detail__text {
     height: 50%;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    color: red;
   }
 }
 .pagination-detail__text.fadeIn {
