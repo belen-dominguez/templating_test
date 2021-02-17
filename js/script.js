@@ -15,13 +15,19 @@ let currentIndex = 0;
 
 
 window.addEventListener('load', () => {
+    slideImage.classList.add('hidden');
+    slideImage.nextElementSibling.classList.add('hidden');
+
     /* Create opening Hero */
     let openingHero = document.createElement('div');
     openingHeroLoad(openingHero);
 
     let removeOpening = setInterval(() => {
-        document.querySelector('body').removeChild(openingHero)
-        clearInterval(removeOpening)
+        document.querySelector('body').removeChild(openingHero);
+        clearInterval(removeOpening);
+
+        slideImage.classList.remove('hidden');
+        slideImage.nextElementSibling.classList.remove('hidden');
     },3500);
     
     /* Set current item to zero*/
