@@ -255,7 +255,7 @@ h1 {
 }
 @media screen and (max-width: 600px) {
   .image-container .image-bg {
-    background: linear-gradient(90deg, #4b4633 0%, #503223 35%, #1c1c2d 100%);
+    background: linear-gradient(90deg, #4b4633 0%, #503223 35%, black 100%);
   }
 }
 .image-container .image-bg .slide-image {
@@ -264,7 +264,7 @@ h1 {
 @media screen and (max-width: 600px) {
   .image-container .image-bg .slide-image {
     height: 76%;
-    border: 3px solid dimgrey;
+    border-bottom: 3px solid dimgrey;
   }
 }
 .image-container .image-bg__text {

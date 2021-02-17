@@ -13,7 +13,7 @@
         justify-content: space-between;
 
         @media screen and (max-width: 600px){
-            background: linear-gradient(90deg, rgba(75,70,51,1) 0%, rgba(80,50,35,1) 35%, rgba(28,28,45,1) 100%);
+            background: linear-gradient(90deg, rgba(75,70,51,1) 0%, rgba(80,50,35,1) 35%, rgba(0,0,0,1) 100%);
         }
     
         .slide-image {
@@ -21,7 +21,7 @@
 
             @media screen and (max-width: 600px){
                 height: 76%;
-                border: 3px solid dimgrey;
+                border-bottom: 3px solid dimgrey;
             }
 
         }
