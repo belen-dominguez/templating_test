@@ -128,10 +128,10 @@ const changeSlidePagination = (pagItem = 'pag-0', slideNr = 'slide-0') => {
 /*Scroll image function*/
 const scrollImage = (index) => {
 
-    /*to obtain scrollMaxLeft- difference with scrollWidth is that scrollWith contamplates the vw of tha last element */
+    /*to obtain scrollMaxLeft- difference with scrollWidth is that scrollWith contemplates the vw of tha last element */
     let maxScroll;
     if (window.innerWidth < 600) {
-        maxScroll = slideImage.scrollWidth + window.innerWidth;
+        maxScroll = slideImage.scrollWidth ;
     }
     else {
         maxScroll = slideImage.scrollWidth - window.innerWidth; 
