@@ -35,7 +35,7 @@ window.addEventListener('load', () => {
 
     /* Disable left arrow when loaded  */
     if(currentIndex == 0){
-        arrowLeft.style.visibility = "hidden"
+        arrowLeft.style.visibility = "hidden";
     }
 
     /* Set margin to align titles to arrows*/
@@ -44,14 +44,13 @@ window.addEventListener('load', () => {
             if(i == 0){
                 return
             }
-            item.style.marginTop = `${slide.offsetHeight *.4}px`
+            item.style.marginTop = `${slide.offsetHeight *.4}px`;
         })
 
     }
      /* Set first scroll position in mobile*/
     if (window.innerWidth < 460){
-        console.log('holi')
-        slideImage.scrollTo(((slideImage.children[0].offsetWidth * 2.4)/ 100),0) 
+        slideImage.scrollTo(((slideImage.children[0].offsetWidth * 2.4)/ 100),0) ;
     }
     
 })
@@ -130,7 +129,13 @@ const changeSlidePagination = (pagItem = 'pag-0', slideNr = 'slide-0') => {
 const scrollImage = (index) => {
 
     /*to obtain scrollMaxLeft- difference with scrollWidth is that scrollWith contamplates the vw of tha last element */
-    let maxScroll = slideImage.scrollWidth - window.innerWidth;
+    let maxScroll;
+    if (window.innerWidth < 600) {
+        maxScroll = slideImage.scrollWidth;
+    }
+    else {
+        maxScroll = slideImage.scrollWidth - window.innerWidth; 
+    }
     
     /*where img ends - we take the length of the text container in the background div*/
     let imgWidth;
