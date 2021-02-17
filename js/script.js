@@ -131,7 +131,6 @@ const scrollImage = (index) => {
     /*to obtain scrollMaxLeft- difference with scrollWidth is that scrollWith contamplates the vw of tha last element */
     let maxScroll;
     if (window.innerWidth < 600) {
-        console.log('holi')
         maxScroll = slideImage.scrollWidth +  window.innerWidth;
     }
     else {

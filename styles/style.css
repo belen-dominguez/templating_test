@@ -462,6 +462,9 @@ footer .logo img {
   width: 93%;
   margin: 2rem auto;
 }
+.slideshow-container .slideshow .slide-item:last-child {
+  width: 10vw;
+}
 .slideshow-container .slideshow .slide-item.fadeIn {
   animation: fadeIn 0.7s ease;
 }
