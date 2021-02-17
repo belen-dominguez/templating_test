@@ -276,6 +276,7 @@ h1 {
 @media screen and (max-width: 600px) {
   .image-container .image-bg__text {
     width: 100vw;
+    min-width: 100vw;
   }
 }
 .image-container .image-bg__text-inner {
@@ -572,7 +573,7 @@ footer .logo img {
     width: 100%;
     font-size: 13px;
     text-align: center;
-    color: red;
+    color: blue;
   }
 }
 .pagination-detail__text.fadeIn {
